@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Align</title>
+	<style>
+		div {
+			border: 3px solid #7B68EE;
+			width: 300px;
+			padding: 10px;
+			margin: auto;
+		}
+
+		/* Float를 이용한 좌우 정렬 */
+		body {
+			padding: 0;
+			margin: 0;
+		}
+		div {
+			border: 3px solid #4B0082;
+			width: 350px;
+			padding: 10px;
+			margin: 0;
+		}
+		div.left { float: left }
+		div.right { float: right }
+
+	</style>
+</head>
+
+<body>
+
+	<h1>margin 속성을 이용한 가운데 정렬</h1>
+	<div>margin의 속성값을 auto로 하면,<br>
+	수평으로 가운데 정렬을 할 수 있어요!
+	</div>
+
+
+	<!-- Float를 이용한 좌우 정렬 -->
+	<h1>float 속성을 이용한 좌우 정렬</h1>
+	<div class="left">float 속성값으로 left 또는 right를 사용하면,<br>
+	수평으로 좌우 정렬을 할 수 있어요!
+	</div>
+	<div class="right">float 속성값으로 left 또는 right를 사용하면,<br>
+	수평으로 좌우 정렬을 할 수 있어요!
+	</div>
+
+</body>
+
+</html>
