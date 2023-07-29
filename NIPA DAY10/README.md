@@ -1,1 +1,1 @@
-
+alert()와 confirm()이 window나 document 없이 사용될 수 있는 이유는 브라우저가 이러한 메서드를 전역 객체로서 제공하기 때문입니다. JavaScript의 전역 객체는 window 객체를 참조합니다. 따라서 코드에서 window.alert()를 호출할 때, window는 생략 가능합니다. confirm() 메서드도 비슷한 원리로 동작합니다. 이것은 사용자에게 확인 대화상자를 표시하고 사용자가 "확인" 또는 "취소"를 선택하도록 요청합니다. 이러한 기능은 브라우저의 Web API로서 제공되며, 전역 객체(window)를 통해 접근할 수 있기 때문에 window나 document 없이 사용할 수 있습니다. 결론적으로, alert() 및 confirm()은 브라우저의 전역 객체에 속한 메서드로, window나 document 없이도 전역 범위에서 호출하여 사용할 수 있습니다.
