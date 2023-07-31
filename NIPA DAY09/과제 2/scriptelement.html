@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript DOM Element</title>
+    <script>
+        //HTML 태그 이름을 이용한 선택
+        console.log('aaa')
+        var selectedItem = document.getElementsByTagName("li");     // 모든 <li> 요소를 선택함.
+        console.log(selectedItem)
+        console.log(selectedItem.length)
+        for (var i = 0; i < selectedItem.length; i++) {
+            selectedItem.item(i).style.color = "red";   // 선택된 모든 요소의 텍스트 색상을 변경함.
+            console.log(selectedItem.item(i));
+        }
+    </script>
+</head>
+<body>
+    <h1>HTML 태그 이름을 이용한 선택</h1>
+    <ul>
+        <li>첫 번째 아이템이에요!</li>
+        <li>두 번째 아이템이에요!</li>
+        <li>세 번째 아이템이에요!</li>
+        <li>네 번째 아이템이에요!</li>
+        <li>다섯 번째 아이템이에요!</li>
+    </ul>
+    <script>
+        var selectedItem = document.getElementsByTagName("li");     // 모든 <li> 요소를 선택함.
+        for (var i = 0; i < selectedItem.length; i++) {
+            selectedItem.item(i).style.color = "red";   // 선택된 모든 요소의 텍스트 색상을 변경함.
+        }
+    </script>
+</body>
+</html>
+
+/*스크립트가 로드되기 전에 실행되는 경우에는 DOM 요소들이 아직 로드되지 않았기 때문에, 
+실제로 해당 요소들을 접근하려고 하면 오류가 발생할 수 있습니다.
+하지만 개발자 도구의 console.log는 스크립트 실행 타이밍이나 스크립트 비동기 실행 등의 
+요소에 따라 DOM 요소들이 이미 로드된 상태일 수 있기 때문에, 스크립트의 동작과 개발자 도구의 동작은 차이가 있을 수 있습니다. 
+이러한 이유로 스크립트에서 DOM 요소를 접근하는 시점을 확실히 하려면 DOMContentLoaded 이벤트 등을 사용하여
+문서가 로드된 후에 스크립트를 실행하도록 하는 것이 좋습니다*/

@@ -1,0 +1,49 @@
+/* 헤더 스타일링 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* 네비게이션 바 스타일링 */
+nav {
+    background-color: #777;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 메인 콘텐츠 스타일링 */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    margin-top: 30px;
+}
+
+/* 푸터 스타일링 */
+footer {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+}
