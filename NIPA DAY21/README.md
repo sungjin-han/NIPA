@@ -1,5 +1,5 @@
 **club_id 상세 조회**   
-경로: /club/{club_id}   
+경로: /club/{club_id}      
 경로 파라미터: club_id   
 + 응답:   
   + HTTP 상태코드: 200 OK   
